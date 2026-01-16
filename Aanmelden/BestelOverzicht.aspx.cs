@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Aanmelden
+{
+    public partial class BestelOverzicht : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //gridview vullen met alle gegevens
+
+            grvArtikels.DataSource = Variables.dtblBestelling;
+            grvArtikels.DataBind();
+
+            //alle gegevens weergeven
+
+            lblNaam.Text = "test naam";
+            lblAchternaam.Text = "test naam";
+            lblEmail.Text = "test@gmail.com";
+            lblTelefoon.Text = "04784531231";
+
+            lblStraat.Text = Variables.straat;
+            lblNummer.Text = Variables.huisnummer;
+            lblPostcode.Text = Variables.postcode;
+            lblGemeente.Text = Variables.gemeente;
+
+            lblOphalenLeveren.Text = Variables.leverenophalen;
+            lblDatum.Text = Variables.begindatum;
+            lbleinddatum.Text = Variables.einddatum;
+            lblUur.Text = Variables.tijd;
+
+            lblVerhuurID.Text = "Verhuurnummer: " + Convert.ToString(Variables.verhuurID);
+            lblTotaalprijs.Text = Variables.totaalbrutobedrag.ToString("F2");
+
+            if(Variables.leverenophalen == "Ophalen")
+            {
+                lblBegindatumTEKST.Text = "Ophaaldatum:";
+                lblEinddatumtekst.Text = "Terugbreng datum:";
+            }
+            else
+            {
+                lblBegindatumTEKST.Text = "Leverdatum:";
+                lblEinddatumtekst.Text = "Retourdatum:";
+            }
+
+        }
+
+        protected void grvArtikels_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

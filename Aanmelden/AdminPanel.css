@@ -1,0 +1,167 @@
+﻿/* From Uiverse.io by Na3ar-17 */
+body {
+    background-color: rgba(36, 40, 50, 1);
+}
+.card {
+    width: 200px;
+    /* background-color: rgba(36, 40, 50, 1);
+background-image: linear-gradient(135deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 40%, rgba(37, 28, 40, 1) 100%); */
+
+    background-color: rgba(36, 40, 50, 1);
+    background-image: linear-gradient( 139deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 0%, rgba(37, 28, 40, 1) 100% );
+    border-radius: 10px;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ALGEMENE LAYOUT */
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+}
+
+/* CONTENT RECHTS */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.input {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #d0d5dd;
+    font-size: 14px;
+    background: #fff;
+    min-width: 160px;
+}
+
+    .input:focus {
+        outline: none;
+        border-color: #7e8590;
+    }
+
+/* TABLE CARD */
+.table-card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+    .menu-link:hover {
+        color: inherit;
+    }
+
+
+/* GRIDVIEW */
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+    .gridview th {
+        text-align: left;
+        padding: 12px;
+        background: #f0f2f5;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .gridview td {
+        padding: 12px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .gridview tr:hover {
+        background: #f9fafb;
+    }
+
+
+    .card .separator {
+        border-top: 1.5px solid #42434a;
+    }
+
+    .card .list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0px 10px;
+    }
+
+        .card .list .element {
+            display: flex;
+            align-items: center;
+            color: #7e8590;
+            gap: 10px;
+            transition: all 0.3s ease-out;
+            padding: 4px 7px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: Arial;
+        }
+
+            .card .list .element svg {
+                width: 19px;
+                height: 19px;
+                transition: all 0.3s ease-out;
+            }
+
+            .card .list .element .label {
+                font-weight: 600;
+            }
+
+            .card .list .element:hover {
+                background-color: #5353ff;
+                color: #ffffff;
+                transform: translate(1px, -1px);
+            }
+
+        .card .list .delete:hover {
+            background-color: #8e2a2a;
+        }
+
+        .card .list .element:active {
+            transform: scale(0.99);
+        }
+
+        .card .list:not(:last-child) .element:hover svg {
+            stroke: #ffffff;
+        }
+
+        .card .list:last-child svg {
+            stroke: #bd89ff;
+        }
+
+        .card .list:last-child .element {
+            color: #bd89ff;
+        }
+
+            .card .list:last-child .element:hover {
+                background-color: rgba(56, 45, 71, 0.836);
+            }
