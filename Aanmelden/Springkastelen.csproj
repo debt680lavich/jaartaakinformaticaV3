@@ -117,29 +117,43 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2149551604.jpg" />
-    <Content Include="Aanmelden.aspx" />
+    <Content Include="Aanbod.aspx" />
     <Content Include="aanmelden.css" />
     <Content Include="admin.aspx" />
     <Content Include="AdminPanel.aspx" />
     <Content Include="AdminPanel.css" />
+    <Content Include="AdminPanelOverzicht.aspx" />
+    <Content Include="Bestelgegevens.aspx" />
     <Content Include="BestelOverzicht.aspx" />
-    <Content Include="Boeking.aspx" />
     <Content Include="Checkout.aspx" />
-    <Content Include="HOME_SEC1.png" />
+    <Content Include="click-cursor.cur" />
+    <Content Include="Crayon.jpg" />
+    <Content Include="hand-cursor.cur" />
+    <Content Include="icons8-select-cursor-24.png" />
+    <Content Include="index.css" />
+    <Content Include="Instellingen.aspx" />
+    <Content Include="krokodil-springkasteel-2 - Copy.jpg" />
     <Content Include="krokodil-springkasteel-2.jpg" />
     <Content Include="logo.png" />
     <Content Include="navbar.css" />
-    <Content Include="Registreren.aspx" />
+    <Content Include="opblaasballen.jpg" />
+    <Content Include="partytent.jpg" />
+    <Content Include="Reserveren.aspx" />
     <Content Include="Startpagina.aspx" />
+    <Content Include="stier.jpg" />
+    <Content Include="StormbaanJungle.jpg" />
+    <Content Include="Thijs.png" />
+    <Content Include="ThijsWit.png" />
+    <Content Include="vlag 2.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aanmelden.aspx.cs">
-      <DependentUpon>Aanmelden.aspx</DependentUpon>
+    <Compile Include="Aanbod.aspx.cs">
+      <DependentUpon>Aanbod.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Aanmelden.aspx.designer.cs">
-      <DependentUpon>Aanmelden.aspx</DependentUpon>
+    <Compile Include="Aanbod.aspx.designer.cs">
+      <DependentUpon>Aanbod.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
@@ -155,19 +169,26 @@
     <Compile Include="AdminPanel.aspx.designer.cs">
       <DependentUpon>AdminPanel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanelOverzicht.aspx.cs">
+      <DependentUpon>AdminPanelOverzicht.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanelOverzicht.aspx.designer.cs">
+      <DependentUpon>AdminPanelOverzicht.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bestelgegevens.aspx.cs">
+      <DependentUpon>Bestelgegevens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bestelgegevens.aspx.designer.cs">
+      <DependentUpon>Bestelgegevens.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BestelOverzicht.aspx.cs">
       <DependentUpon>BestelOverzicht.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BestelOverzicht.aspx.designer.cs">
       <DependentUpon>BestelOverzicht.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Boeking.aspx.cs">
-      <DependentUpon>Boeking.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Boeking.aspx.designer.cs">
-      <DependentUpon>Boeking.aspx</DependentUpon>
     </Compile>
     <Compile Include="Checkout.aspx.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
@@ -176,13 +197,20 @@
     <Compile Include="Checkout.aspx.designer.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registreren.aspx.cs">
-      <DependentUpon>Registreren.aspx</DependentUpon>
+    <Compile Include="Instellingen.aspx.cs">
+      <DependentUpon>Instellingen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Registreren.aspx.designer.cs">
-      <DependentUpon>Registreren.aspx</DependentUpon>
+    <Compile Include="Instellingen.aspx.designer.cs">
+      <DependentUpon>Instellingen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reserveren.aspx.cs">
+      <DependentUpon>Reserveren.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserveren.aspx.designer.cs">
+      <DependentUpon>Reserveren.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startpagina.aspx.cs">
       <DependentUpon>Startpagina.aspx</DependentUpon>

@@ -11,151 +11,169 @@ namespace Aanmelden
 {
 
 
-    public partial class Checkout
+    public partial class AdminPanelOverzicht
     {
 
         /// <summary>
-        /// form1 control.
+        /// form2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
 
         /// <summary>
-        /// hiddenType control.
+        /// pnlZoeken control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hiddenType;
+        protected global::System.Web.UI.WebControls.Panel pnlZoeken;
 
         /// <summary>
-        /// btnTerug control.
+        /// txtVerhuurID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnTerug;
+        protected global::System.Web.UI.WebControls.TextBox txtVerhuurID;
 
         /// <summary>
-        /// pnlUur control.
+        /// btnZoeken control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlUur;
+        protected global::System.Web.UI.WebControls.Button btnZoeken;
 
         /// <summary>
-        /// ddlUur control.
+        /// lblVerhuurID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlUur;
+        protected global::System.Web.UI.WebControls.Label lblVerhuurID;
 
         /// <summary>
-        /// pnlAdres control.
+        /// lblVoornaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlAdres;
+        protected global::System.Web.UI.WebControls.Label lblVoornaam;
 
         /// <summary>
-        /// txtStraat control.
+        /// lblAchternaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStraat;
+        protected global::System.Web.UI.WebControls.Label lblAchternaam;
 
         /// <summary>
-        /// txtNummer control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNummer;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
 
         /// <summary>
-        /// txtPostcode control.
+        /// lblTelefoon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPostcode;
+        protected global::System.Web.UI.WebControls.Label lblTelefoon;
 
         /// <summary>
-        /// txtGemeente control.
+        /// lblAdres control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGemeente;
+        protected global::System.Web.UI.WebControls.Label lblAdres;
 
         /// <summary>
-        /// lblAfstand control.
+        /// lblBeginDatum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAfstand;
+        protected global::System.Web.UI.WebControls.Label lblBeginDatum;
 
         /// <summary>
-        /// lblLeveringskost control.
+        /// lblBeginUur control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLeveringskost;
+        protected global::System.Web.UI.WebControls.Label lblBeginUur;
 
         /// <summary>
-        /// GridView1 control.
+        /// lblEindDatum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Label lblEindDatum;
 
         /// <summary>
-        /// lbltotaalprijs control.
+        /// spanLevering control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltotaalprijs;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spanLevering;
 
         /// <summary>
-        /// lblfoutmelding control.
+        /// spanOphalen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblfoutmelding;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spanOphalen;
 
         /// <summary>
-        /// btnBestel control.
+        /// tblArtikels control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBestel;
+        protected global::System.Web.UI.WebControls.GridView tblArtikels;
+
+        /// <summary>
+        /// lblTotaal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotaal;
+
+        /// <summary>
+        /// lblOpmerkingen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOpmerkingen;
     }
 }

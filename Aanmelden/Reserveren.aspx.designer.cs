@@ -11,7 +11,7 @@ namespace Aanmelden
 {
 
 
-    public partial class Registreren
+    public partial class Reserveren
     {
 
         /// <summary>
@@ -24,129 +24,84 @@ namespace Aanmelden
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Naam control.
+        /// pnlDatum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Naam;
+        protected global::System.Web.UI.WebControls.Panel pnlDatum;
 
         /// <summary>
-        /// txtNaam control.
+        /// txtStartDatum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNaam;
+        protected global::System.Web.UI.WebControls.TextBox txtStartDatum;
 
         /// <summary>
-        /// Label2 control.
+        /// txtEindDatum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox txtEindDatum;
 
         /// <summary>
-        /// txtVoornaam control.
+        /// btnZoek control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVoornaam;
+        protected global::System.Web.UI.WebControls.Button btnZoek;
 
         /// <summary>
-        /// Label3 control.
+        /// pnlArtikelen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Panel pnlArtikelen;
 
         /// <summary>
-        /// txtAdres control.
+        /// lblFoutmelding control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAdres;
+        protected global::System.Web.UI.WebControls.Label lblFoutmelding;
 
         /// <summary>
-        /// Label4 control.
+        /// rptArtikelen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Repeater rptArtikelen;
 
         /// <summary>
-        /// txtTelnr control.
+        /// gvOverzicht control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTelnr;
+        protected global::System.Web.UI.WebControls.GridView gvOverzicht;
 
         /// <summary>
-        /// Label5 control.
+        /// btnVerder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
-
-        /// <summary>
-        /// txtEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
-
-        /// <summary>
-        /// Label6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
-
-        /// <summary>
-        /// txtWachtwoord control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtWachtwoord;
-
-        /// <summary>
-        /// btnRegistreren control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistreren;
-
-        /// <summary>
-        /// btnAanmelden control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAanmelden;
+        protected global::System.Web.UI.WebControls.Button btnVerder;
     }
 }

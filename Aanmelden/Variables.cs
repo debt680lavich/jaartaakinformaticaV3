@@ -9,6 +9,10 @@ namespace Aanmelden
 {
     public class Variables
     {
+        //admin Overzicht verhuringen
+        
+        public static DataRow dtRijVERHUUR;
+        
         //Verhuring
         public static DataTable dtblBestelling = new DataTable();
         public static DataRow dtRij;
@@ -31,7 +35,15 @@ namespace Aanmelden
         public static string postcode;
         public static string gemeente;
 
+        public static string Naam;
+        public static string Achternaam;
+        public static string email;
+        public static string telefoonnr;
+
+        public static string betaalwijze;
+
         //aanmelden
         public static bool aangemeld;
+        public static bool adminaangemeld;
     }
 }

@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
         :root {
-            --accent-color: #8672FF;
+            --accent-color: #2e51a3;
             --base-color: #ffffff;
             --text-color: #2E2B41;
             --input-color: #F3F0FF;
@@ -142,17 +142,17 @@
                 <table>
                     <tr>
                         <td>
-                            email</td>
-                        <td>
-                            <asp:TextBox ID="txtEmail" runat="server" CssClass="auto-style1" />
+                            email<asp:TextBox ID="txtEmail" runat="server"/>
                         </td>
+                        <td>
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td>
-                            wachtwoord</td>
-                        <td>
-                            <asp:TextBox ID="txtWachtwoord" runat="server" TextMode="Password" />
+                            wachtwoord<asp:TextBox ID="txtWachtwoord" runat="server" TextMode="Password" />
                         </td>
+                        <td>
+                            &nbsp;</td>
                     </tr>
                 </table>
 

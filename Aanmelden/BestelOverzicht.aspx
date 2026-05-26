@@ -41,8 +41,41 @@
         .total {
             font-size: 18px;
             font-weight: bold;
-            text-align: right;
+            text-align: left;
             margin-top: 15px;
+        }
+        
+.overzicht-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+    .overzicht-table th {
+        background: #f3f4f8;
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+        border-bottom: 2px solid #e5e5e5;
+    }
+
+    .overzicht-table td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .overzicht-table tr:hover {
+        background: #f9fafc;
+    }
+
+    .overzicht-table tr:nth-child(even) {
+        background: #fafafa;
+    }
+        .auto-style1 {
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -137,15 +170,13 @@
 
             <!-- BESTELLING -->
             <div class="section">
-                <h3>Bestelde artikelen</h3>
+                <h3>Verhuuroverzicht</h3>
 
                 <asp:GridView ID="grvArtikels" runat="server"
-                    CellPadding="4"
-                    ForeColor="#333333"
-                    GridLines="None" Width="546px">
-                    <AlternatingRowStyle BackColor="White" />
-                    <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                    <RowStyle BackColor="#EFF3FB" />
+                    CssClass="overzicht-table" Width="578px" Height="207px">
+                    <EmptyDataTemplate>
+                        z
+                    </EmptyDataTemplate>
                 </asp:GridView>
 
                 <div class="total">

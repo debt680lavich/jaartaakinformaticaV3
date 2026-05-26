@@ -82,7 +82,7 @@ td:first-child label {
 /* INPUT */
 input[type="text"],
 input[type="password"] {
-    width: 70%;
+    width: 60%;
     height: 50px;
     padding: 0 15px;
     background-color: var(--input-color);
@@ -104,7 +104,7 @@ input[type="submit"] {
     padding: 14px;
     border-radius: 1000px;
     border: none;
-    background-color: var(--accent-color);
+    background-color: #2e51a3;
     color: white;
     font-weight: 600;
     cursor: pointer;

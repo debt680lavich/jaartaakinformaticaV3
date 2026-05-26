@@ -1,167 +1,474 @@
-﻿/* From Uiverse.io by Na3ar-17 */
+﻿/* RESET */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgba(36, 40, 50, 1);
-}
-.card {
-    width: 200px;
-    /* background-color: rgba(36, 40, 50, 1);
-background-image: linear-gradient(135deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 40%, rgba(37, 28, 40, 1) 100%); */
-
-    background-color: rgba(36, 40, 50, 1);
-    background-image: linear-gradient( 139deg, rgba(36, 40, 50, 1) 0%, rgba(36, 40, 50, 1) 0%, rgba(37, 28, 40, 1) 100% );
-    border-radius: 10px;
-    padding: 15px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f8;
+    cursor: url("C:\Users\32250\Desktop\INFORMATICA\6de jaar\sql in webapp\Eindtaak\Aanmelden\icons8-select-cursor-24.png"), auto;
 }
 
-/* ALGEMENE LAYOUT */
+/* LAYOUT */
 .layout {
     display: flex;
     min-height: 100vh;
-    background: #f4f6f9;
 }
 
 /* SIDEBAR */
 .sidebar {
-    width: 260px;
+    width: 240px;
+    background: linear-gradient( 135deg, rgba(36, 40, 50, 1) 0%, rgba(37, 28, 40, 1) 100% );
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-/* CONTENT RECHTS */
+/* MENU LIJST */
+.list {
+    list-style: none;
+    padding: 0 16px;
+    margin: 0;
+}
+
+/* MENU LINK */
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #ffffff;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+    /* TEKST */
+    .menu-link p {
+        margin: 0;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    /* ICONEN */
+    .menu-link svg {
+        width: 16px;
+        height: 16px;
+        stroke: #ffffff;
+        flex-shrink: 0;
+    }
+
+    /* HOVER */
+    .menu-link:hover {
+        background-color: rgba(255, 255, 255, 0.14);
+        transform: translateX(4px);
+    }
+
+        /* HOVER ICON */
+        .menu-link:hover svg {
+            stroke: #c9b6ff;
+        }
+
+    /* ACTIEF ITEM */
+    .menu-link.active {
+        background-color: rgba(255, 255, 255, 0.22);
+    }
+/*KNO¨P */
+.cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #2e51a3;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 10px;
+}
+
+    .cta:hover {
+        background: #1f3c82;
+    }
+
+/* SCHEIDING */
+.separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 16px 0;
+}
+
+/* UITLOGGEN */
+.delete .menu-link:hover {
+    background-color: rgba(220, 38, 38, 0.25);
+}
+
+    .delete .menu-link:hover svg {
+        stroke: #ffb4b4;
+    }
+
+
 .content {
     flex: 1;
     padding: 30px;
 }
 
-/* FILTERS */
-.filters {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
+
+.table-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* INPUTS */
-.input {
-    padding: 10px 12px;
-    border-radius: 10px;
-    border: 1px solid #d0d5dd;
-    font-size: 14px;
-    background: #fff;
-    min-width: 160px;
+.stat-card.red {
+    border-left: 6px solid #dc2626;
 }
 
-    .input:focus {
-        outline: none;
-        border-color: #7e8590;
+.stat-card.green {
+    border-left: 6px solid #16a34a;
+}
+
+.icon-red {
+    background: #dc2626 !important;
+}
+
+.icon-green {
+    background: #16a34a !important;
+}
+
+/* OVERZICHT TABEL */
+
+.overzicht-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+    .overzicht-table th {
+        background: #f3f4f8;
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+        border-bottom: 2px solid #e5e5e5;
     }
 
-/* TABLE CARD */
-.table-card {
-    background: white;
-    border-radius: 14px;
-    padding: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    .overzicht-table td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .overzicht-table tr:hover {
+        background: #f9fafc;
+    }
+
+    .overzicht-table tr:nth-child(even) {
+        background: #fafafa;
+    }
+
+.rental-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    max-width: 900px;
 }
-.menu-link {
+
+/* Verhuur ID balk */
+.rental-id-bar {
     display: flex;
     align-items: center;
-    gap: 12px;
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
+    gap: 16px;
+    background: #1e293b;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 10px;
 }
 
-    .menu-link:hover {
-        color: inherit;
+.rental-id-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+}
+
+.rental-id-value {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+/* Sectiekaarten */
+.section-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+    .section-header h2 {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1e293b;
+        margin: 0;
     }
 
+.section-icon {
+    width: 18px;
+    height: 18px;
+    color: #64748b;
+    flex-shrink: 0;
+}
 
-/* GRIDVIEW */
-.gridview {
+/* Klantgegevens grid */
+.customer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+    .info-block.full-width {
+        grid-column: 1 / -1;
+    }
+
+    .info-block label {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: #94a3b8;
+    }
+
+    .info-block span {
+        font-size: 14px;
+        color: #1e293b;
+    }
+
+/* Scheidingslijn */
+.separator-line {
+    border: none;
+    border-top: 1px solid #f1f5f9;
+    margin: 20px 0;
+}
+
+/* Datums & levering grid */
+.rental-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 32px;
+    align-items: start;
+}
+
+.meta-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .meta-block label {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: #94a3b8;
+    }
+
+/* Datum badges */
+.date-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+    .date-badge svg {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+    }
+
+    .date-badge.start {
+        background: #eff6ff;
+        color: #2563eb;
+    }
+
+    .date-badge.end {
+        background: #fef3c7;
+        color: #d97706;
+    }
+
+.date-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.date-main {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.date-time {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.75;
+    line-height: 1;
+}
+
+/* Levering/Ophalen toggle */
+.delivery-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 5px 8px;
+    width: fit-content;
+}
+
+.toggle-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+    .toggle-option svg {
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+    }
+
+    .toggle-option.active {
+        background: #fff;
+        color: #1e293b;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+.toggle-divider {
+    color: #cbd5e1;
+    font-size: 12px;
+    padding: 0 2px;
+}
+
+/* Artikelentabel */
+.articles-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
 }
 
-    .gridview th {
+    .articles-table thead tr {
+        background: #f8fafc;
+    }
+
+    .articles-table th {
+        padding: 10px 14px;
         text-align: left;
-        padding: 12px;
-        background: #f0f2f5;
-        color: #333;
+        font-size: 11px;
         font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: #64748b;
+        border-bottom: 1px solid #e2e8f0;
     }
 
-    .gridview td {
-        padding: 12px;
-        border-top: 1px solid #e5e7eb;
+    .articles-table td {
+        padding: 12px 14px;
+        color: #334155;
+        border-bottom: 1px solid #f1f5f9;
     }
 
-    .gridview tr:hover {
-        background: #f9fafb;
+    .articles-table tbody tr:last-child td {
+        border-bottom: none;
     }
 
-
-    .card .separator {
-        border-top: 1.5px solid #42434a;
+    .articles-table tbody tr:hover {
+        background: #f8fafc;
     }
 
-    .card .list {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        padding: 0px 10px;
+    .articles-table th.center,
+    .articles-table td.center {
+        text-align: center;
     }
 
-        .card .list .element {
-            display: flex;
-            align-items: center;
-            color: #7e8590;
-            gap: 10px;
-            transition: all 0.3s ease-out;
-            padding: 4px 7px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-family: Arial;
-        }
+    .articles-table th.right,
+    .articles-table td.right {
+        text-align: right;
+    }
 
-            .card .list .element svg {
-                width: 19px;
-                height: 19px;
-                transition: all 0.3s ease-out;
-            }
+/* Totaalrij */
+.total-row {
+    background: #f8fafc;
+    border-top: 2px solid #e2e8f0 !important;
+}
 
-            .card .list .element .label {
-                font-weight: 600;
-            }
+    .total-row td {
+        padding: 14px;
+        font-weight: 600;
+        color: #1e293b;
+        border-bottom: none !important;
+    }
 
-            .card .list .element:hover {
-                background-color: #5353ff;
-                color: #ffffff;
-                transform: translate(1px, -1px);
-            }
+.total-price {
+    font-size: 16px;
+    color: #1e293b;
+}
 
-        .card .list .delete:hover {
-            background-color: #8e2a2a;
-        }
+/* Opmerkingen */
+.remarks-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px 16px;
+    min-height: 80px;
+}
 
-        .card .list .element:active {
-            transform: scale(0.99);
-        }
+    .remarks-box p {
+        margin: 0;
+        font-size: 11px;
+        color: #334155;
+        line-height: 1.6;
+    }
 
-        .card .list:not(:last-child) .element:hover svg {
-            stroke: #ffffff;
-        }
+.verhuurid-opzoeken {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 14px 16px;
+    min-height: 30px;
+}
 
-        .card .list:last-child svg {
-            stroke: #bd89ff;
-        }
-
-        .card .list:last-child .element {
-            color: #bd89ff;
-        }
-
-            .card .list:last-child .element:hover {
-                background-color: rgba(56, 45, 71, 0.836);
-            }
+    .verhuurid-opzoeken p {
+        margin: 0;
+        font-size: 9px;
+        color: #334155;
+        line-height: 1.6;
+    }

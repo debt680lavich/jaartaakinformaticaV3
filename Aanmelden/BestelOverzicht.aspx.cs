@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,16 +13,17 @@ namespace Aanmelden
         protected void Page_Load(object sender, EventArgs e)
         {
             //gridview vullen met alle gegevens
+            DataTable winkelwagen = (DataTable)Session["winkelwagen"];
 
-            grvArtikels.DataSource = Variables.dtblBestelling;
+            grvArtikels.DataSource = winkelwagen;
             grvArtikels.DataBind();
 
             //alle gegevens weergeven
 
-            lblNaam.Text = "test naam";
-            lblAchternaam.Text = "test naam";
-            lblEmail.Text = "test@gmail.com";
-            lblTelefoon.Text = "04784531231";
+            lblNaam.Text = Variables.Naam;
+            lblAchternaam.Text = Variables.Achternaam;
+            lblEmail.Text = Variables.email;
+            lblTelefoon.Text = Variables.telefoonnr;
 
             lblStraat.Text = Variables.straat;
             lblNummer.Text = Variables.huisnummer;
@@ -38,8 +40,8 @@ namespace Aanmelden
 
             if(Variables.leverenophalen == "Ophalen")
             {
-                lblBegindatumTEKST.Text = "Ophaaldatum:";
-                lblEinddatumtekst.Text = "Terugbreng datum:";
+                lblBegindatumTEKST.Text = "Ophalen:";
+                lblEinddatumtekst.Text = "Terugbrengen:";
             }
             else
             {

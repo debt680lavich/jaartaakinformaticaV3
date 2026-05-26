@@ -11,7 +11,7 @@ namespace Aanmelden
 {
 
 
-    public partial class Boeking
+    public partial class Instellingen
     {
 
         /// <summary>
@@ -24,93 +24,111 @@ namespace Aanmelden
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtStart control.
+        /// pnlSuccess control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStart;
+        protected global::System.Web.UI.WebControls.Panel pnlSuccess;
 
         /// <summary>
-        /// txtEinde control.
+        /// lblSuccess control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEinde;
+        protected global::System.Web.UI.WebControls.Label lblSuccess;
 
         /// <summary>
-        /// ddlArtikels control.
+        /// pnlError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlArtikels;
+        protected global::System.Web.UI.WebControls.Panel pnlError;
 
         /// <summary>
-        /// ddlAantal control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAantal;
+        protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
-        /// txtAantal control.
+        /// txtArtikelNaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAantal;
+        protected global::System.Web.UI.WebControls.TextBox txtArtikelNaam;
 
         /// <summary>
-        /// button1 control.
+        /// txtArtikelPrijs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton button1;
+        protected global::System.Web.UI.WebControls.TextBox txtArtikelPrijs;
 
         /// <summary>
-        /// grvArtikels control.
+        /// txtMinimumleeftijd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvArtikels;
+        protected global::System.Web.UI.WebControls.TextBox txtMinimumleeftijd;
 
         /// <summary>
-        /// lbltotaalprijs control.
+        /// txtCategorieID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltotaalprijs;
+        protected global::System.Web.UI.WebControls.TextBox txtCategorieID;
 
         /// <summary>
-        /// lblfoutmelding control.
+        /// txtVoorraad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblfoutmelding;
+        protected global::System.Web.UI.WebControls.TextBox txtVoorraad;
 
         /// <summary>
-        /// Button2 control.
+        /// txtFoto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Button2;
+        protected global::System.Web.UI.WebControls.TextBox txtFoto;
+
+        /// <summary>
+        /// btnOpslaan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnOpslaan;
+
+        /// <summary>
+        /// btnReset control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReset;
     }
 }
